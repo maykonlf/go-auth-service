@@ -22,7 +22,7 @@ run:
 	./$(BINARY_NAME)
 
 deps:
-	$(GOGET) get github.com/go-swagger/go-swagger/cmd/swagger
+	$(GOGET) github.com/go-swagger/go-swagger/cmd/swagger
 	$(GOGET) -u ./...
 
 docs: build-docs serve-docs
