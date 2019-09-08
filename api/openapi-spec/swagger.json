@@ -1,0 +1,30 @@
+{
+  "consumes": [
+    "application/json",
+    "application/xml"
+  ],
+  "produces": [
+    "application/json",
+    "application/xml"
+  ],
+  "schemes": [
+    "http"
+  ],
+  "swagger": "2.0",
+  "info": {
+    "version": "0.0.1"
+  },
+  "host": "http://auth-service",
+  "basePath": "/v1",
+  "paths": {
+    "/healthz": {
+      "get": {
+        "description": "Check service health",
+        "tags": [
+          "healthz"
+        ],
+        "operationId": "healthz"
+      }
+    }
+  }
+}

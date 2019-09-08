@@ -1,3 +1,18 @@
+// Schemes: http
+// Host: http://auth-service
+// BasePath: /v1
+// Version: 0.0.1
+//
+// Consumes:
+// - application/json
+// - application/xml
+//
+// Produces:
+// - application/json
+// - application/xml
+//
+//
+// swagger:meta
 package main
 
 import (
