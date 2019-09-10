@@ -8,7 +8,7 @@ BINARY_NAME=auth-service
 all: test build-docs build
 
 test:
-	$(GOTEST) -v ./...
+	$(GOTEST) -race -coverprofile=coverage.txt -covermode=atomic -v ./...
 
 build:
 	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 $(GOBUILD) -o $(BINARY_NAME) ./cmd/auth/main.go
