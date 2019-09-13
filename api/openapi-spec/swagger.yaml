@@ -1,0 +1,22 @@
+basePath: '{{.BasePath}}'
+host: '{{.Host}}'
+info:
+  contact: {}
+  description: Authentication service
+  license: {}
+  title: Auth Service
+  version: "0.1"
+paths:
+  /healthz:
+    get:
+      consumes:
+      - application/json
+      description: get string by ID
+      operationId: get-string-by-int
+      produces:
+      - application/json
+      responses:
+        "200": {}
+        "500": {}
+      summary: Show a account
+swagger: "2.0"

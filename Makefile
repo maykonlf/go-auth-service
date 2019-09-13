@@ -25,11 +25,5 @@ deps:
 	$(GOGET) github.com/go-swagger/go-swagger/cmd/swagger
 	$(GOGET) -u ./...
 
-docs: build-docs serve-docs
-
-build-docs:
-	swagger generate spec -o api/openapi-spec/swagger.json
-
-serve-docs:
-	swagger serve api/openapi-spec/swagger.json
-
+docs:
+	swag init -g cmd/auth/main.go -o api/openapi-spec/
