@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package domain;
+
+option go_package = "github.com/maykonlf/go-auth-service/internal/entities";
+
+import "google/protobuf/timestamp.proto";
+import "github.com/maykonlf/go-auth-service/internal/proto-files/domain/status.proto";
+
+message Account {
+    string id = 1;
+    string username = 2;
+    string password = 3;
+    AccountStatus status = 4;
+    google.protobuf.Timestamp created_at = 5;
+}
